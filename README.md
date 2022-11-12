@@ -1,156 +1,132 @@
-# 자소서 종합 플랫폼 서비스 'Zazinmori'
-> 부제 : 자소서를 진짜 모르는 이들을 위하여
+<div align=center>
+    <h1>Zazinmori</h1>
+</div>
 
-## 1. 프로젝트 배경 및 목표
-- 프로젝트 주제를 정할 때, 공통된 경험을 바탕으로 아이디어를 도출하려고 노력
-- 팀원 모두 취준생이라는 점과 자소서라는 공통된 경험을 바탕으로 자소서에 대한 서비스로 의견 종합
-- 핵심 서비스는 우리들이 자소서를 쓰면서 가졌던 pain point들을 종합
+>취업준비생 대상 자기소개서 분석 및 구직 관련 정보 제공 서비스
+> 
+
+Zazinmori는 자소서를 작성해보면서 겪었던 Pain point에서 아이디어를 얻어 개발했습니다. 취업준비생을 타겟으로 하여 합격 자기소개서 키워드 빈도 및 기업의 최신 토픽을 분석하고, 사용자에게 자기자소서 작성 관련 가이드 라인 및 구인 중인 기업 정보를 종합적으로 제공하여 취업을 종합적으로 지원하는 서비스입니다.
+
+
+<div align=left>
+    <br>
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
+    <img src="https://img.shields.io/badge/Apache Hadoop-66CCEE?style=for-the-badge&logo=Apache Hadoop&logoColor=white">
+    <img src="https://img.shields.io/badge/Apache Spark-E25A1C?style=for-the-badge&logo=Apache Spark&logoColor=white">
+    <img src="https://img.shields.io/badge/Apache Airflow-017CEE?style=for-the-badge&logo=Apache Airflow&logoColor=white">
+    <img src="https://img.shields.io/badge/Apache Kafka-231F20?style=for-the-badge&logo=Apache Kafka&logoColor=white">  
+    <img src="https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=Elasticsearch&logoColor=white">
+    <img src="https://img.shields.io/badge/Logstash-005571?style=for-the-badge&logo=Logstash&logoColor=white">
+    <img src="https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=Kibana&logoColor=white">
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white">
+    <img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=for-the-badge&logo=Amazon EC2&logoColor=white">
+    <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">
+    <img src="https://img.shields.io/badge/Fastapi-009688?style=for-the-badge&logo=Fastapi&logoColor=white">
+    <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white">  
+    <img src="https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=NGINX&logoColor=white">     
+    <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white">  
+    <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white">  
+    <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white">  
+</div>
+<br>
+
+프로젝트 기간 : 2022.08.18 ~ 2022.09.30
+
+# 프로젝트 배경
+- 취준생으로서 자소서를 쓰면서 가졌던 pain point들에서 아이디어 도출
   - 기업을 둘러 싼 최신 토픽들이 무엇인지 매번 찾아보기 힘듦
   - 일일이 합격자소서들을 찾아보는 것이 힘듦
   - 기업의 기본 정보들을 각 기업별로 찾아보는 것 힘듦
 - 이러한 정보들을 제공해주는 서비스들이 있긴하지만, 하나에 특화되어있거나 부분적으로 제공하고있는 상황
 - 이를 종합하여 하나의 서비스로 만들어 낸다면, 자소서를 작성하는 시간이 크게 절약될 뿐만아니라 자소서의 질도 향상될수 있다고 판단
-- 이를 토대로 하나의 웹서비스로 기업의 모든 정보를 찾아볼 수 있고 구직자들은 하나의 웹페이지에서 자소서를 작성하기만 되는 자소서 종합 플랫폼을 기획
+- 따라서 하나의 웹서비스로 기업의 모든 정보를 찾아볼 수 있고 구직자들은 하나의 웹페이지에서 자소서를 작성하기만 되는 종합 자소서 플랫폼을 기획
 
-## 2. 서비스 구상
-- 기본 기능
-  - 회원가입
-  - 로그인/로그아웃
+# 주요 기능
+- 기업별 세부 정보 검색 기능
+- 채용공고 스크랩 및 자소서 작성 기능
+- 기업별, 자소서 항목별 추천 키워드 제공 기능
+- 사용자 활동 기반의 유저 맞춤형 기업 추천 기능
+- 커뮤니티 및 기타 유저 편의 기능
 
-- 자소서 관련 기능
-  - 뉴스 토픽 분석
-  - 합격 자소서 키워드 분석
-  - 기업 세부 정보
-    - 기업 기본 정보
-    - 기업 재무 정보
-    - 기업 채용 공고
-  - 자소서 항목별 추천 키워드 분석
-  - 유저 맞춤형 기업 추천
+# 아키텍쳐
+![pjt3-arch](/images/pjt3-arch.png)
 
-- 유저 편의 기능
-  - 기업 검색 기능
-  - 커뮤니티 기능
-  - 이용자 맞춤 서비스
-  - 채용 공고 스크랩
-  - 자소서 작성 및 저장
-  - 유저 맞춤 인기 검색 순위
+# 클러스터
+![pjt3-cluster](/images/pjt3-cluster.png)
 
-## 3. 아키텍쳐
-- 파이프라인
-  - ETL 파이프라인
-  - 유저 로그 파이프라인
-- WAS
-  - Django
-  - FastAPI
-- Load balancing
-  - Nginx
-- Clustering
-  - Hadoop
-  - Spark
-  - Kafka 
-- ELK Stack
-  - Logstash
-  - Elasticsearch
-  - Kibana
-- CI/CD
-  - Jenkins
-  - Gitlab
-- 배포
-  - AWS
-  - Gunicorn
+# 세부 구현 내용
+자진모리는 확장성, 성능, 안정성이라는 세가지 요소에 초점을 맞추어 개발 했습니다.
 
-## 4. 나의 프로젝트 수행 내용
-1. 데이터 수집
-   - API
-     - 기업 관련 데이터
-   - Crawling : Multi-processing 사용
-     - 잡코리아 합격자소서
-     - 링커리어 합격자소서
-     - 빅카인즈 기업 관련 뉴스
+## 확장성
+>서비스 성장에 따른 서버 규모 확장 용이
+>
+- H-S Clustering : 하둡-스파크 클러스터를 구축하여 추후 서비스 성장 시 scale out 가능
+- Nginx Upstream : Upstream으로 추가 WAS 지정하여 서버 확장 가능
+- 로그 모니터링 : elasticsearch, kibana 등을 통해 로그 데이터 분석 환경 구축
+- 용도에 따른 서버 구분 : 추후 서버 확장 시, 용도에 맞는 서버에서 기능 확장 시도 가능
 
-2. 데이터 가공 및 적재
-   - 모든 처리는 pyspark 파일로 작성하여 spark-submit으로 실행
-   - 기업 고유번호를 기준으로 모든 기업 데이터 매핑
-     - 기업 명으로 검색시, 그 기업에 대한 모든 데이터를 사용자에게 위함
-     - 기업 고유번호가 없는 데이터의 경우, 기업 명을 기준으로 매핑하여 기업 고유번호 컬럼 생성
-   - 모든 합격자소서 데이터의 컬럼을 동일하게 처리
-     - 값이 없는 경우 빈 문자열로 처리
-   - MySQL에 데이터 적재
+## 성능
+>구축한 데이터 파이프 라인에 대한 가동 속도 향상
+>
+- 멀티프로세싱 : Airflow에서 30만 건 이상의 데이터 크롤링 단시간 내 가능토록 멀티프로세싱을 통한 성능 향상
+- Spark Cluster : yarn을 클러스터 매니저로 지정하여 리소스 관리, 각 executor에 2core씩 할당
+- FastAPI : 메인 서비스 및 모델 서빙 역할에 따라 WAS 구분, FastAPI 이용하여 모델 서빙
+- Logstash : Django에서 실시간으로 로그 확보 및 ES 적재
 
-3. ETL 파이프라인 운영
-   - Airflow로 ETL 프로세스 자동화
-     - DAG1. corp_finance
-       - 금융위원회 기업재무정보
-         - 년단위로 1년마다 업데이트
-         - 가져올 수 있는 데이터 최근 20년 전까지
-         - 현재 시점 1년전 자료가 최신
-       - Schedule_interval
-         - yearly로 설정
-     - DAG2. topic&corporation
-       - 빅카인즈 기업별 주요 뉴스
-         - 데이터는 실시간 업데이트
-       - 금융감독원 기업개황
-         - 3개월 마다 업데이트
-         - 현재 시점 1년전 자료가 최신
-       - Schedule_interval
-         - weekly로 설정
-         - 일일 단위로 하면 데이터의 너무 양이 적기 때문
-     - DAG3. cvletter
-       - 합격자소서
-         - 데이터는 실시간 업데이트
-       - Schedule_interval
-         - weekly로 설정
-         - 일일 단위로 하면 데이터의 양이 너무 적기 때문
-     - DELETE
-       - 홈디렉토리와 HDFS에 적재된 자료들을 주기적으로 정리하기 위한 DAG파일
-       - MONTHLY로 설정
+## 안정성
+>서비스 규모, 트래픽 증가되는 경우에도 감당 가능토록 인프라 구축
+>
+- Hadoop Cluster : 3개 서버를 NameNode, SecondaryNamenode, DataNode로 활용
+- Airflow : 지속적인 업데이트가 필요한 ETL [데이터 수집 -> 하둡 적재 -> 스파크 처리 -> MySQL 적재] 스케줄링하여 자동화
+- NGINX : 정적인 파일에 대한 요청을 담당하여 서비스 중에 WAS에 대한 부하 절감 및 WAS 간 Load balancing
+- 로그 수집 : 로그 데이터 유실 방지 위해 2개의 logstash를 각각 로그 수집기와 메세지 처리기로 구분, 그 사이에 중간 저장소로 kafka 사용
 
-4. 검색엔진 구현
-  - MySQL에서 종합 기업 정보 데이터를 로그스태시로 가져와서 엘라스틱서치에 적재
-    - 기업데이터들이 Airflow 상에서 Monthly로 업데이트 되도록 스케쥴링해놨기 때문에, 로그스태시로 기업 종합 정보 데이터도 로그스태시로 Monthly마다 엘라스틱 서치에 업데이트 하도록 스케쥴링
-    - 엘라스틱 서치 색인
-      - Nori 토크나이저 사용
-        - 한글 형태소 분석을 위함
-      - 동의어 필터 적용
-        - 삼성전자 = 삼전
-        - 한국수력원자력 = 한수원
+## 기타
+- Jenkins-GitLab : 배포과정을 자동화하여 개발 속도 향상
+- Cold Data의 MongoDB 적재 : 추후 분석을 위해 과거 로그 데이터 적재
+- HTTPS : 서비스 보안 향상
 
-5. 유저 로그 파이프라인 운영
-  - 두 개의 로그스태시 사용
-    - 로그 수집기
-      - Django에서 발생하는 로그 수집하여 kafka에 전달
-    - 메세징 처리기
-      - kafka의 topic을 가져와서 메세징 처리후 엘라스틱 서치에 적재
-  - 로그 데이터 중간 저장소로 kafka 사용
-    - 배포서버, 로그스태시 서버, 카프카 서버, 엘라스틱서치 서버가 다 달랐기 때문에 여러 장애로 인한 데이터 유실문제 고려
-    - kafka를 중간저장소로 사용하여, 유저 로그 파이프라인의 안정성 높힘
-  - 유저 로그 모니터링
-    - 수집된 로그 데이터는 엘라스틱 서치에 적재
-    - 이를 키바나로 시각화하여 로그 데이터를 모니터링
-      - 검색 키워드를 통해 검색 엔진 성능 향상 목표
-      - 유저 사용 패턴을 통한 유저친화적 웹 서비스 개선 목표
-      - 유저 맞춤형 추천 서비스 업그레이드 목표
+# 활용 데이터
 
-6. 검색 순위 구현
-   - 회원 가입 시, 희망 직군과 희망 근무지역을 받음
-     - 이용자가 지원의 폭을 넓힐 수 있는 맞춤형 서비스 제공하기 위함
-     - 같은 직군이나 지역을 희망하는 사용자들의 일주일 간의 검색 기업을 집계하여 순위(1~5등)를 표시
-     - 로그 파이프 라인으로 수집한 이용자의 검색 키워드 데이터를 토대로 구현
+|  no  |       내용        |       출처        |    형식/방식     |
+|:----:|:---------------:|:---------------:|:------------:|
+|  1   |  금융위원회 기업기본정보   |     공공데이터포털     |   JSON/API   |
+|  2   |  금융위원회 기업재무정보   |     공공데이터포털     |   JSON/API   |
+|  3   |  금융위원회 지배구조정보   |     공공데이터포털     |   JSON/API   |
+|  4   | 금융감독원 단일회사 주요계정 |    OPEN DART    |   XML/API    |
+|  5   |   금융감독원 기업개황    |    OPEN DART    |   XML/API    |
+|  6   |  금융감독원 기업고유번호   |    OPEN DART    |   XML/API    |
+|  7   |   잡코리아 합격자소서    |      잡코리아       | CSV/CRAWLING |
+|  8   |   인크루트 합격자소서    |      인크루트       | CSV/CRAWLING |
+|  9   |   링커리어 합격자소서    |      링커리어       | CSV/CRAWLING |
+|  10  |    독취사 합격자소서    |   독취사(네이버 카페)   | CSV/CRAWLING |
+|  11  | 자소설 채용공고/자소서 항목 |       자소설       | CSV/CRAWLING |
+|  12  | 빅카인즈 기업별 주요 뉴스  |      빅카인즈       | CSV/CRAWLING |
 
-## 5. 사용 데이터 및 ERD
-- 데이터 출처
+# ERD
+![pjt3-erd](/images/pjt3-erd.png)
 
-|  no  |       내용        |          출처           |    형식/방식     |
-|:----:|:---------------:|:---------------------:|:------------:|
-|  1   |  금융위원회 기업기본정보   |  [공공데이터포털][공공데이터포털]   |   JSON/API   |
-|  2   |  금융위원회 기업재무정보   |  [공공데이터포털][공공데이터포털]   |   JSON/API   |
-|  3   |  금융위원회 지배구조정보   |  [공공데이터포털][공공데이터포털]   |   JSON/API   |
-|  4   | 금융감독원 단일회사 주요계정 | [OPEN DART][opendart] |   XML/API    |
-|  5   |   금융감독원 기업개황    | [OPEN DART][opendart] |   XML/API    |
-|  6   |  금융감독원 기업고유번호   | [OPEN DART][opendart] |   XML/API    |
-|  7   |   잡코리아 합격자소서    |     [잡코리아][잡코리아]      | CSV/CRAWLING |
-|  8   |   인크루트 합격자소서    |     [인크루트][인크루트]      | CSV/CRAWLING |
-|  9   |   링커리어 합격자소서    |     [링커리어][링커리어]      | CSV/CRAWLING |
-|  10  |    독취사 합격자소서    |  [독취사(네이버 카페)][독취사]   | CSV/CRAWLING |
-|  11  | 자소설 채용공고/자소서 항목 |      [자소설][자소설]       | CSV/CRAWLING |
-|  12  | 빅카인즈 기업별 주요 뉴스  |     [빅카인즈][빅카인즈]      | CSV/CRAWLING |
+# 서비스 화면
+- 메인 페이지
+![pjt3-cluster](/images/main.png)
+
+- 검색 페이지
+![pjt3-search1](/images/search1.png)
+![pjt3-search2](/images/search2.png)
+![pjt3-search3](/images/search3.png)
+![pjt3-search4](/images/search4.png)
+![pjt3-search5](/images/search5.png)
+![pjt3-search6](/images/search6.png)
+![pjt3-search7](/images/search7.png)
+
+- 자소서 작성 페이지
+![pjt3-resume1](/images/resume1.png)
+![pjt3-resume2](/images/resume2.png)
+![pjt3-resume3](/images/resume3.png)
+
+- 커뮤니티 페이지
+![pjt3-comm1](/images/comm1.png)
+![pjt3-comm2](/images/comm2.png)
+
+- 마이 페이지
+![pjt3-my](/images/my.png)
