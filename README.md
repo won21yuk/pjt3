@@ -52,7 +52,7 @@ Zazinmori는 자소서를 작성해보면서 겪었던 Pain point에서 아이�
 ![pjt3-arch](/images/pjt3-arch.png)
 
 # 클러스터
-![pjt3-cluster](/images/pjt3-cluster.png)
+![pjt3-cluster](/images/pjt3-cluster-edit.png)
 
 # 세부 구현 내용
 자진모리는 확장성, 성능, 안정성이라는 세가지 요소에 초점을 맞추어 개발 했습니다.
