@@ -108,25 +108,25 @@ Zazinmori는 자소서를 작성해보면서 겪었던 Pain point에서 아이�
 
 # 서비스 화면
 - 메인 페이지
-![pjt3-cluster](/images/main.png)
+![pjt3-main](/images/pjt3-main.png)
 
 - 검색 페이지
-![pjt3-search1](/images/search1.png)
-![pjt3-search2](/images/search2.png)
-![pjt3-search3](/images/search3.png)
-![pjt3-search4](/images/search4.png)
-![pjt3-search5](/images/search5.png)
-![pjt3-search6](/images/search6.png)
-![pjt3-search7](/images/search7.png)
+![pjt3-search1](/images/pjt3-search1.png)
+![pjt3-search2](/images/pjt3-search2.png)
+![pjt3-search3](/images/pjt3-search3.png)
+![pjt3-search4](/images/pjt3-search4.png)
+![pjt3-search5](/images/pjt3-search5.png)
+![pjt3-search6](/images/pjt3-search6.png)
+![pjt3-search7](/images/pjt3-search7.png)
 
 - 자소서 작성 페이지
-![pjt3-resume1](/images/resume1.png)
-![pjt3-resume2](/images/resume2.png)
-![pjt3-resume3](/images/resume3.png)
+![pjt3-resume1](/images/pjt3-resume1.png)
+![pjt3-resume2](/images/pjt3-resume2.png)
+![pjt3-resume3](/images/pjt3-resume3.png)
 
 - 커뮤니티 페이지
-![pjt3-comm1](/images/comm1.png)
-![pjt3-comm2](/images/comm2.png)
+![pjt3-comm1](/images/pjt3-comm1.png)
+![pjt3-comm2](/images/pjt3-comm2.png)
 
 - 마이 페이지
-![pjt3-my](/images/my.png)
+![pjt3-my](/images/pjt3-my.png)
