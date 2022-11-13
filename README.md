@@ -68,7 +68,7 @@ Zazinmori는 자소서를 작성해보면서 겪었던 Pain point에서 아이�
 ## 성능
 >구축한 데이터 파이프 라인에 대한 가동 속도 향상
 >
-- 멀티프로세싱 : Airflow에서 30만 건 이상의 데이터 크롤링 단시간 내 가능토록 멀티프로세싱을 통한 성능 향상
+- 멀티프로세싱 : Airflow에서 데이터 크롤링이 단시간 내 가능토록 멀티프로세싱을 통한 성능 향상
 - Spark Cluster : yarn을 클러스터 매니저로 지정하여 리소스 관리, 각 executor에 2core씩 할당
 - FastAPI : 메인 서비스 및 모델 서빙 역할에 따라 WAS 구분, FastAPI 이용하여 모델 서빙
 - Logstash : Django에서 실시간으로 로그 확보 및 ES 적재
